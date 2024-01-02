@@ -1,0 +1,6 @@
+@GamificationToDo_HostAddress = http://localhost:5191/
+
+GET {{GamificationToDo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

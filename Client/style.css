@@ -1,0 +1,313 @@
+@font-face {
+  font-family: "RobotoMono";
+  src: url("./assets/RobotoMono-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/Raleway-VariableFont_wght.ttf");
+}
+:root{
+  --buttonTextColor: #ebebeb;
+  --greenBtn: #50B170;
+  --greenBtnHover: #4ab917;
+  --bgCollor: #CCE6DE;
+  --msgCollor: #a3ecac;
+  --bgCollorHover: #c3dbd4;
+}
+body{
+  background-color: var(--bgCollor);
+  font-family: "Raleway";
+}
+button{
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: "RobotoMono";
+  font-size: 20px;
+  font-weight: bold;
+}
+/*index*/
+.indexDiv{
+  padding: 25% 25%;
+}
+.indexRow{
+  display: flex;
+  margin-top: 5px;
+}
+.indexBtn{
+  flex-grow: 1;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: var(--greenBtn);
+  color: var(--buttonTextColor);
+}
+.indexBtn:hover{
+  background-color: var(--greenBtnHover);
+}
+/*login*/
+.loginDiv{
+  padding: 5% 25%;
+}
+.inputBox{
+  padding: 5% 10%;
+}
+.rowDiv{
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px;
+}
+.loginInput{
+  flex-grow: 1;
+  margin-left: 5px;
+}
+.loginButton{
+  flex-grow: 1;
+  background-color: var(--greenBtn);
+  color: var(--buttonTextColor);
+}
+
+.loginButton:hover{
+  background-color: var(--greenBtnHover);
+}
+
+/*profile*/
+.profileDiv{
+  display: block;
+}
+.leftDiv{
+  width: 50%;
+  float:left;
+}
+.rightDiv{
+  width: 50%;
+  float:right;
+}
+.submitButton{
+  background-color: var(--greenBtn);
+  color: var(--buttonTextColor);
+  flex-grow: 1;
+  margin-top: 10px;
+  padding: 10px 10px;
+}
+
+.submitButton:hover{
+  background-color: var(--greenBtnHover);
+}
+/* nav*/
+.navDiv{
+  display: flex;
+  flex-direction: row;
+}
+.navButton:hover{
+  background-color: #01377D;
+}
+.navButton{
+  background-color: #009DD1;
+  padding: 15px 30px;
+  margin: 2px;
+  flex-grow: 1;
+  border-radius: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+/*friend*/
+.searchRow
+{
+  display: flex;
+  padding: 0px 25%;
+}
+.searchbar
+{
+  flex-grow: 1;
+}
+.searchBtn
+{
+  flex-grow: 1;
+  margin-top: 5px;
+  background-color: #009DD1;
+  color:var(--buttonTextColor);
+}
+.searchBtn:hover{
+  background-color: #01377D;
+}
+
+/* task*/
+.rowForTask{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px 0px;
+}
+
+.rowForTask:hover{
+  background-color: var(--bgCollorHover);
+}
+.taskNameLab{
+  flex-grow: 2;
+}
+.submitTaskDiv{
+  margin: 10px 0px;
+  display: flex;
+
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+/*task buttons*/
+.addTaskBtn{
+  padding: 0px 5px;
+  margin-left: 3px;
+  background-color: var(--greenBtn);
+  color: var(--buttonTextColor);
+
+}
+.addTaskBtn:hover{
+  background-color: var(--greenBtnHover);
+}
+
+.deleteTaskBtn{
+  margin-left: 5px;
+  background-color: #be4040;
+  color: var(--buttonTextColor);
+}
+.deleteTaskBtn:hover{
+  background-color: #bb3030
+}
+.completeTaskBtn{
+  margin-left: 5px;
+  background-color: var(--greenBtn);
+  color: var(--buttonTextColor);
+}
+.completeTaskBtn:hover{
+  background-color: var(--greenBtnHover);
+}
+/*Your feed*/
+.divForMessage{
+  margin-top: 5px;
+  margin-left: 10px;
+  padding: 20px 10px;
+  display: flex;
+  background-color: var(--msgCollor);
+  border-radius: 5px;
+}
+/*Goal*/
+.deleteGoalBtn{
+  padding: 5px 0px;
+  margin-left: 5px;
+  background-color: #be4040;
+  color:var(--buttonTextColor);
+  flex-grow: 1;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.deleteGoalBtn:hover{
+  background-color: #bb3030;
+}
+
+.completeGoalBtn{
+  padding: 5px 0px;
+  margin-left: 5px;
+  background-color: #50B170;
+  color:var(--buttonTextColor);
+  flex-grow: 1;
+  margin-top: 2px;
+}
+.completeGoalBtn:hover{
+  background-color: #4ab917;
+}
+
+.collapsible {
+  background-color: #50B170;
+  color:var(--buttonTextColor);
+  cursor: pointer;
+  padding: 9px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+
+  margin-top: 3px;
+}
+.active, .collapsible:hover {
+  background-color: #4ab917;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: var(--bgCollor);
+
+}
+
+.goalSubmitRow{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+.goalInput{
+  flex-grow: 2;
+  margin-left: 3px;
+}
+/*Stats*/
+.statsDiv{
+  padding: 2% 10%;
+}
+.statsTitle{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.stat{
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex ;
+  justify-content: space-between;
+}
+/*Leaderboards page*/
+.tabs{
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.selectiveBtn
+{
+  padding: 15px 30px;
+  color: #ebebeb;
+  background-color: #50B170;
+}
+
+.selectiveBtn:hover
+{
+  background-color: #4ab917;
+}
+
+.entryDiv{
+  padding: 20px;
+  margin: 5px 25%;
+  background-color: #009DD1;
+  color: white;
+  font-size: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*generic*/
+.title{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.subTitle{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+}
